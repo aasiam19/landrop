@@ -1,0 +1,8 @@
+/home/fahim/projects/landrop/build/CMakeFiles/edit_cache.dir
+/home/fahim/projects/landrop/build/CMakeFiles/rebuild_cache.dir
+/home/fahim/projects/landrop/build/core/CMakeFiles/landrop_core.dir
+/home/fahim/projects/landrop/build/core/CMakeFiles/edit_cache.dir
+/home/fahim/projects/landrop/build/core/CMakeFiles/rebuild_cache.dir
+/home/fahim/projects/landrop/build/cli/CMakeFiles/landrop_cli.dir
+/home/fahim/projects/landrop/build/cli/CMakeFiles/edit_cache.dir
+/home/fahim/projects/landrop/build/cli/CMakeFiles/rebuild_cache.dir

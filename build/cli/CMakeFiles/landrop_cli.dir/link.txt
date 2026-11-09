@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/landrop_cli.dir/main.cpp.o -o landrop  ../core/liblandrop_core.a 
