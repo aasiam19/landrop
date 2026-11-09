@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/fahim/projects/landrop/core
 
 CXX_FLAGS = -std=gnu++17
 
