@@ -63,101 +63,42 @@ CMAKE_BINARY_DIR = /home/fahim/projects/landrop/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: core/all
-all: cli/all
+all: CMakeFiles/landrop.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: core/preinstall
-preinstall: cli/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: core/clean
-clean: cli/clean
+clean: CMakeFiles/landrop.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory cli
-
-# Recursive "all" directory target.
-cli/all: cli/CMakeFiles/landrop_cli.dir/all
-.PHONY : cli/all
-
-# Recursive "preinstall" directory target.
-cli/preinstall:
-.PHONY : cli/preinstall
-
-# Recursive "clean" directory target.
-cli/clean: cli/CMakeFiles/landrop_cli.dir/clean
-.PHONY : cli/clean
-
-#=============================================================================
-# Directory level rules for directory core
-
-# Recursive "all" directory target.
-core/all: core/CMakeFiles/landrop_core.dir/all
-.PHONY : core/all
-
-# Recursive "preinstall" directory target.
-core/preinstall:
-.PHONY : core/preinstall
-
-# Recursive "clean" directory target.
-core/clean: core/CMakeFiles/landrop_core.dir/clean
-.PHONY : core/clean
-
-#=============================================================================
-# Target rules for target core/CMakeFiles/landrop_core.dir
+# Target rules for target CMakeFiles/landrop.dir
 
 # All Build rule for target.
-core/CMakeFiles/landrop_core.dir/all:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/landrop_core.dir/build.make core/CMakeFiles/landrop_core.dir/depend
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/landrop_core.dir/build.make core/CMakeFiles/landrop_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fahim/projects/landrop/build/CMakeFiles --progress-num=3,4 "Built target landrop_core"
-.PHONY : core/CMakeFiles/landrop_core.dir/all
+CMakeFiles/landrop.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fahim/projects/landrop/build/CMakeFiles --progress-num=1,2 "Built target landrop"
+.PHONY : CMakeFiles/landrop.dir/all
 
 # Build rule for subdir invocation for target.
-core/CMakeFiles/landrop_core.dir/rule: cmake_check_build_system
+CMakeFiles/landrop.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fahim/projects/landrop/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 core/CMakeFiles/landrop_core.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/landrop.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fahim/projects/landrop/build/CMakeFiles 0
-.PHONY : core/CMakeFiles/landrop_core.dir/rule
+.PHONY : CMakeFiles/landrop.dir/rule
 
 # Convenience name for target.
-landrop_core: core/CMakeFiles/landrop_core.dir/rule
-.PHONY : landrop_core
+landrop: CMakeFiles/landrop.dir/rule
+.PHONY : landrop
 
 # clean rule for target.
-core/CMakeFiles/landrop_core.dir/clean:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/landrop_core.dir/build.make core/CMakeFiles/landrop_core.dir/clean
-.PHONY : core/CMakeFiles/landrop_core.dir/clean
-
-#=============================================================================
-# Target rules for target cli/CMakeFiles/landrop_cli.dir
-
-# All Build rule for target.
-cli/CMakeFiles/landrop_cli.dir/all: core/CMakeFiles/landrop_core.dir/all
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/landrop_cli.dir/build.make cli/CMakeFiles/landrop_cli.dir/depend
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/landrop_cli.dir/build.make cli/CMakeFiles/landrop_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fahim/projects/landrop/build/CMakeFiles --progress-num=1,2 "Built target landrop_cli"
-.PHONY : cli/CMakeFiles/landrop_cli.dir/all
-
-# Build rule for subdir invocation for target.
-cli/CMakeFiles/landrop_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fahim/projects/landrop/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/landrop_cli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fahim/projects/landrop/build/CMakeFiles 0
-.PHONY : cli/CMakeFiles/landrop_cli.dir/rule
-
-# Convenience name for target.
-landrop_cli: cli/CMakeFiles/landrop_cli.dir/rule
-.PHONY : landrop_cli
-
-# clean rule for target.
-cli/CMakeFiles/landrop_cli.dir/clean:
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/landrop_cli.dir/build.make cli/CMakeFiles/landrop_cli.dir/clean
-.PHONY : cli/CMakeFiles/landrop_cli.dir/clean
+CMakeFiles/landrop.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/clean
+.PHONY : CMakeFiles/landrop.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,3 +1,0 @@
-add_executable(landrop_cli main.cpp)
-target_link_libraries(landrop_cli PRIVATE landrop_core)
-set_target_properties(landrop_cli PROPERTIES OUTPUT_NAME landrop)

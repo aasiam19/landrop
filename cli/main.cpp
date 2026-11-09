@@ -1,10 +1,10 @@
 #include <iostream>
-#include "landrop/net.hpp"
+#include <unistd.h>
 
 int main() {
-    landrop::netInit();
-    std::cout << "LanDrop skeleton OK\n"
-              << "  platform: " << landrop::platformName() << "\n"
-              << "  host:     " << landrop::hostName() << "\n";
+    char host[256] = {};
+    gethostname(host, sizeof host - 1);
+
+    std::cout << "LanDrop is alive on host: " << host << "\n";
     return 0;
 }

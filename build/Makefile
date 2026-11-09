@@ -117,30 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named landrop_core
+# Target rules for targets named landrop
 
 # Build rule for target.
-landrop_core: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 landrop_core
-.PHONY : landrop_core
+landrop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 landrop
+.PHONY : landrop
 
 # fast build rule for target.
-landrop_core/fast:
-	$(MAKE) $(MAKESILENT) -f core/CMakeFiles/landrop_core.dir/build.make core/CMakeFiles/landrop_core.dir/build
-.PHONY : landrop_core/fast
+landrop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/build
+.PHONY : landrop/fast
 
-#=============================================================================
-# Target rules for targets named landrop_cli
+cli/main.o: cli/main.cpp.o
+.PHONY : cli/main.o
 
-# Build rule for target.
-landrop_cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 landrop_cli
-.PHONY : landrop_cli
+# target to build an object file
+cli/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/cli/main.cpp.o
+.PHONY : cli/main.cpp.o
 
-# fast build rule for target.
-landrop_cli/fast:
-	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/landrop_cli.dir/build.make cli/CMakeFiles/landrop_cli.dir/build
-.PHONY : landrop_cli/fast
+cli/main.i: cli/main.cpp.i
+.PHONY : cli/main.i
+
+# target to preprocess a source file
+cli/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/cli/main.cpp.i
+.PHONY : cli/main.cpp.i
+
+cli/main.s: cli/main.cpp.s
+.PHONY : cli/main.s
+
+# target to generate assembly for a file
+cli/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/landrop.dir/build.make CMakeFiles/landrop.dir/cli/main.cpp.s
+.PHONY : cli/main.cpp.s
 
 # Help Target
 help:
@@ -150,8 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... landrop_cli"
-	@echo "... landrop_core"
+	@echo "... landrop"
+	@echo "... cli/main.o"
+	@echo "... cli/main.i"
+	@echo "... cli/main.s"
 .PHONY : help
 
 

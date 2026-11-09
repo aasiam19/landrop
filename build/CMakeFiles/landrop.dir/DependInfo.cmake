@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/fahim/projects/landrop/core/src/net.cpp" "core/CMakeFiles/landrop_core.dir/src/net.cpp.o" "gcc" "core/CMakeFiles/landrop_core.dir/src/net.cpp.o.d"
+  "/home/fahim/projects/landrop/cli/main.cpp" "CMakeFiles/landrop.dir/cli/main.cpp.o" "gcc" "CMakeFiles/landrop.dir/cli/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
